@@ -12,8 +12,8 @@ from googletrans import Translator
 import time,random,sys,json,codecs, threading,glob,urllib,urllib2,urllib3,re,ast,os, subprocess,requests,tempfile
 
 cl = LINETCR.LINE()
-cl.login(token="token bot")
-#cl.login(token='TOKEN_HERE')
+cl.login(token="EsmGzch3kiE0CZ1azoAa.5zAyirmvRM0XOTpnL6L4gG.n/eHR2MB6KUEdYvLVUHKnGcTr9zitQta188if7eYCPs=")
+#cl.login(token='EsmGzch3kiE0CZ1azoAa.5zAyirmvRM0XOTpnL6L4gG.n/eHR2MB6KUEdYvLVUHKnGcTr9zitQta188if7eYCPs=')
 cl.loginResult()
 print "PUBLICK PRANKBOTS SUCCESS LOGIN\nSELAMAT MENGGUNAKAN"
 
@@ -23,7 +23,7 @@ sys.setdefaultencoding('utf-8')
 
 
 #----------------------------------------------------------
-helpMessage ="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••╣)
+helpMessage ="""(╣••~H~Y~P~N~O~T~I~C~••╣)
 ✰ Hay (sapa si bot)
 ✰ Playstore NamaApp
 ✰ Fancytext: Text
@@ -79,14 +79,7 @@ helpMessage ="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́
 ✰ Settings
 ✰ Sett
 
-CREATOR
-BY: PRANKBOTS
-  ❂•••••••SPONSOR•••••••❂
-         https://line.me/R/ti/p/%40iya4481p
-   ☆★☆★☆★☆★☆★☆★☆
-        http://line.me/ti/p/~@sml1492z
- ❂•••••••COSTUMER•••••••❂
-         http://line.me/ti/p/~@gnh2780p
+==HYPNOTIC FAMS==
 
 """
 helpset="""{{ADMIN/OWNER}}
@@ -107,16 +100,14 @@ helpset="""{{ADMIN/OWNER}}
 ✰ Lurkers
 ✰ Broadcast: "text"
 
-:::SUBCRABE:::
-https://www.youtube.com/channel/UCycBrqSWEHdk-slnhUmGWiQ
 """
 
 KAC=[cl]
 mid = cl.getProfile().mid
 
 Bots=[mid]
-Creator= "mid kamu" #bukan mid bot nya ya tapi mid si pembuat bot
-admin= "mid kamu" #yang ini samakan aja kayak mid creator
+Creator= "ubcfa87d3a0ffbb28c35ccf7870eefb4d" #bukan mid bot nya ya tapi mid si pembuat bot
+admin= "ubcfa87d3a0ffbb28c35ccf7870eefb4d" #yang ini samakan aja kayak mid creator
 
 contact = cl.getProfile()
 backup1 = cl.getProfile()
@@ -143,7 +134,7 @@ wait = {
     "comment2":"Wkwkwk ＼（○＾ω＾○）／",
     "comment3":"Lucu Banget!!! ヘ(^_^)ヘ",
     "comment4":"Nice Kak (^_^)",
-    "comment5":"Bot Auto Like ©By : https://www.youtube.com/channel/UCycBrqSWEHdk-slnhUmGWiQ\nContact pembuat : 👉 line.me/ti/p/~adiputra_95",    
+    "comment5":"Bot Auto Like Lagi kosong",    
     "commentOn":True,
     "commentBlack":{},
     "blacklist":{},
@@ -852,7 +843,7 @@ def bot(op):
             ginfo = cl.getGroup(op.param1)
             contact = cl.getContact(op.param2)
             image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-            cl.sendText(op.param1,"Hallo " + cl.getContact(op.param2).displayName + "\nWelcome To ☞ " + str(ginfo.name) + " ☜" + "\nBudayakan Cek Note\nDan Semoga Betah Disini  (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))
+            cl.sendText(op.param1,"Hallo " + cl.getContact(op.param2).displayName + "\nWelcome To Hypnotic Fams " + str(ginfo.name) + " ☜" + "\nJangan Lupa Cek Note Untuk info penting\nDan Semoga Betah Disini  (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))
             cl.sendImageWithURL(op.param1,image)
             print "MEMBER JOIN TO GROUP"
 
@@ -939,7 +930,7 @@ def bot(op):
                                     else:
                                         cl.sendText(op.param1, "Haii " + "☞ " + nick[1] + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
                                 else:
-                                    cl.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
+                                    cl.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nGausah Ngintip \nSini Gabung Chat...   ")
                         else:
                             pass
                     else:
@@ -2102,7 +2093,7 @@ def bot(op):
                  cnt.to = msg.to
                  cl.sendMessage(cnt)
                  xname = cl.getContact(msg.from_).displayName
-                 cl.sendText(msg.to,"Ada pemberitahuan dari kak "+xname+"\nJangan Pada diam Ya kak  \nJangan Juga sider   (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))
+                 cl.sendText(msg.to,"Ada pemberitahuan dari kak "+xname+"\nJangan pd diem2 bae  \nJangan Juga sider   (｀・ω・´)\n \n \n==WE ARE HYPNOTIC FAMS=="  +  datetime.now().strftime('%H:%M:%S'))
                 else:   
   #                if wait["tagall"] == False:  
                        xname = cl.getContact(msg.from_).displayName
@@ -2188,7 +2179,7 @@ def bot(op):
                  cnt.to = msg.to
                  cl.sendMessage(cnt)
                  xname = cl.getContact(msg.from_).displayName
-                 cl.sendText(msg.to,"Ada pemberitahuan dari kak "+xname+"\nJangan Pada diam Ya kak  \nJangan Juga sider   (｀・ω・´)\n \n"  +  datetime.now().strftime('%H:%M:%S'))
+                 cl.sendText(msg.to,"Ada pemberitahuan dari kak "+xname+"\nJangan Pada diam Ya kak  \nJangan Juga sider   (｀・ω・´)\n \n \n==WE ARE HYPNOTIC FAMS=="  +  datetime.now().strftime('%H:%M:%S'))
                 else:   
   #                if wait["tagall"] == False:  
                        xname = cl.getContact(msg.from_).displayName
@@ -2427,7 +2418,7 @@ def bot(op):
 #--------------------------------------------------------
             elif msg.text in ["Welcome","welcome","Welkam","welkam","Wc","wc"]:
                 gs = cl.getGroup(msg.to)
-                cl.sendText(msg.to,"Selamat Datang Di "+ gs.name)
+                cl.sendText(msg.to,"~Selamat Datang Di Hypnotic Fams~ \n \nJangan lupa cek note untuk info penting \nSemoga betah disini ＼（○＾ω＾○）／ \n==WE ARE HYPNOTIC FAMS== "+ gs.name)
                 msg.contentType = 7
                 msg.contentMetadata={'STKID': '247',
                                     'STKPKGID': '3',
@@ -2442,7 +2433,7 @@ def bot(op):
 		gid = cl.getGroupIdsJoined()
 		if msg.from_ in admin:
 		    for i in gid:
-			cl.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~eclipse.id (｀・ω・´)\n\nSubcrabe\nhttps://www.youtube.com/channel/UCycBrqSWEHdk-slnhUmGWiQ"  +  datetime.now().strftime('%H:%M:%S'))
+			cl.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : -"  +  datetime.now().strftime('%H:%M:%S'))
 		    cl.sendText(msg.to,"Success BC BosQ")
 		else:
 		    cl.sendText(msg.to,"Khusus Admin")
@@ -2578,7 +2569,7 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
-                        cl.sendText(msg.to,"Bye beb..i will miss you..:(\n Add ya kaka  Jangan Lupa add OA kita http://line.me/ti/p/~@kmj9979f")
+                        cl.sendText(msg.to,"Bye beb..i will miss you..:(\n Add ya kaka  Jangan Lupa add OA kita ")
                         time.sleep(1.0)
                         msg.contentType = 13
                         msg.contentMetadata = {'mid': msg.from_}
